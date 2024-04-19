@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Domande</title>
+</head>
+<body>
+    <header>
+        <img src="./assets/epicode_logo.png" alt="Logo epicode">
+        <div id="tempoEst">     <!--CONTENITORE TIMER--> 
+            <div id="tempo"></div>
+            <div id="tempoText"></div>
+        </div>          
+    </header>
+    <main class="main-centrato">
+       <h1 id="boxdomande"></h1>        <!--CONTENITORE DOMANDE--> 
+       <div id="boxrisposte"></div>     <!-- CONTENITORE RISPOSTE-->
+       <div id="numerodomande"></div>   <!-- INDICATORE NUMERO DOMANDA-->
+    </main>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="module" src="./js/index_domande.js"></script>
+</body>
+</html>

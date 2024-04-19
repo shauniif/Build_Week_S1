@@ -1,0 +1,246 @@
+/* --------------------------------FORMATTAZIONE COMUNE ------------------------*/
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,300;0,400;0,700;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,300;0,400;0,700;1,300&display=swap');
+
+/* FORMATTAZIONE GENERALE*/
+body {
+    background-image: url(../assets/bg.jpg);
+    font-family: "Inter", sans-serif;
+    background-size: cover;
+    padding: 2vw 5vw 5vw;
+    font-size: 1.2rem;
+    line-height: 1.65;
+    color: white;
+    box-sizing: border-box;
+}
+
+h1, h2, h3 {
+    font-family: "Outfit", sans-serif;
+}
+
+b { /*RIPRISTINO IL BOLD*/
+    font-weight: bold;
+}
+
+/*HEADER*/
+header {
+    height: 2vw;
+    margin-bottom: 6vw;
+}
+
+header img {
+    height: 100%;
+}
+
+/* BOTTONI AZZURRI (PAGINA 1, 4)*/
+
+.bluebutton {
+    background-color: #00ffff;
+    font-weight: bold;
+    font-size: 1.2em;
+    padding: 1vw 2.2vw;
+    border: none;
+    box-shadow: 0 0 10px #00ffff;
+    cursor: pointer;
+}
+
+/********************MAIN CENTRATO PER LE PAGINE *************************/
+.main-centrato {
+    text-align: center;
+    padding-left: 20em;
+    padding-right: 24em;
+}
+
+/**************************** PRIMA PAGINA *******************/
+
+/*MAIN*/
+
+h1 {
+    font-size: 4em;
+    line-height: 0.7;
+    margin-bottom: 2vw;
+}
+
+h3 {
+    color: #d20094;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+main p {
+    margin-bottom: 3vw;
+}
+
+ul {
+    list-style-type: disc;
+    padding-left: 1.5vw;
+    margin-bottom: 8vw;
+}
+
+/*FORM*/
+#procedi {
+    display: inline-block;
+    width: 100%;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+ 
+input[type="checkbox"] + label::before {
+    content: "";
+    display: inline-block;
+    width: 1.5vw;
+    height: 1.5vw;
+    background-color: #0b113b;
+    border: 2px solid white;
+    margin-right: 1vw;
+    vertical-align: middle;
+}
+
+input[type="checkbox"]:checked + label::before {
+    content: "\2713"; 
+    font-size: 1em;
+    line-height: 1.5em;
+    text-align: center;
+    color: white;
+}
+
+label {
+    color: white;
+    vertical-align: middle;
+} 
+
+#bottoneDestro {
+    float: right;
+}
+/************************* SECONDA PAGINA *******************************/
+
+#boxdomande {
+    font-size: 2.5em;
+    line-height: 1.25;
+}
+
+#tempoEst {
+    float: right;
+    text-align: center;
+    line-height: 0;
+}
+
+#boxrisposte { 
+    margin-bottom: 7em;  
+}
+
+.tastorisposta {
+    display: inline-block;
+    border: 4px solid transparent;
+    padding: 1em 2em;
+    width: 12em;
+    max-height: 10em;
+    margin: 2em;
+    border-radius: 50px;
+    background-color: rgba(156, 153, 153, 0.1);
+    box-shadow: -2px -2px 2px rgb(230, 226, 226);
+    font-weight: bold;
+    cursor: pointer;
+} 
+
+.tastorisposta:hover {
+    background-color: rgba(175, 1, 135);
+}
+
+#numerodomande span {
+    color:#d20094;
+}
+
+/************************** TERZA PAGINA ****************/
+h1 + p {
+    font-size: 1.4em;
+    margin-bottom: 0.5vw;
+}
+
+#main-centrato3 {
+    text-align: center;
+}
+
+/***************TABELLA CON GRAFICA*******************/
+
+table {
+    width: 100%;
+}
+
+td {
+    vertical-align: middle;
+}
+
+#donutchart1 {
+    width: 30vw;
+    height: 30vw;
+    padding: 0;
+}
+
+.charts {
+    display: inline-block;
+}
+
+#button3 {
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    padding: 1vw 3.5vw;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+.testoCalcolo {
+    font-size: 1.4em;
+    line-height: 1.1;
+}
+
+.testoCalcolo span {
+    font-size: 2.4em;
+}
+
+/************************** QUARTA PAGINA ****************/
+
+
+/******************************MAIN*******************/
+
+#fpage p {
+    font-size: 1.5em;
+    margin-top: 1em;
+}
+
+/********************* FORM ************/
+.stelle {
+    fill: #000;
+    cursor: pointer;
+}
+
+.stellacliccata {
+ fill: #00ffff;   
+}
+
+.main-centrato input{
+    background-color: transparent;
+    border: none;
+    opacity: 0.8;
+    color: #ffffff;
+    width: 88%;
+}
+
+hr {
+    border: 1px solid #d20094;
+}
+
+#minfo {
+    margin-top: 2em;
+    float: none;
+}
+
+::placeholder {
+    font-family: "Inter", sans-serif;
+    color: grey;
+    font-size: 1.5em;
+}
